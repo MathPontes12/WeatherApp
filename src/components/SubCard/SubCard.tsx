@@ -7,11 +7,12 @@ import contextWeather from "../ContextWeather/Context";
 
 const SubCard = () => {
 
-
+    //CHAMADA DO CONTEXT
     const context = useContext(contextWeather)
 
     if (!context) return null;
 
+    // DIV COM OS CARDS PEQUENOS DE PREVISAO DO TEMPO
     return(
 
         <div className="bg-bgCard xl:w-full w-fit flex xl:flex-row flex-col place-self-center py-[20px] px-[15px] rounded-[20px] xl:gap-0 gap-[20px]">

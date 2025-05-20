@@ -2,6 +2,8 @@ import { TemperatureProps } from "./TemperatureType"
 
 
 const Temperature = ({ tempAtual, tempMin, tempMax, tempDescricao }: TemperatureProps) => {
+
+    // COMPONENTE PARA TEMPERATURA ATUAL, MAX E MIN, E O TEMPO/CLIMA ATUAL
     return (
 
         <div className="flex flex-col text-white w-full xl:gap-0 gap-[20px]">

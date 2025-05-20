@@ -38,6 +38,7 @@ const WeatherProvider = ({ children }: WeatherProps) => {
     }, [nome])
 
     return (
+        //CRIAÇÃO DO PROVIDER, QUE ENVOLVE TODO HTML NO layout.tsx
         <contextWeather.Provider value={{ weather, setWeather, nome, setNome }}>
             {children}
         </contextWeather.Provider>

@@ -5,9 +5,7 @@ import { MiniCardProps } from "./MiniCardType";
 
 const MiniCard = ({ diaDaSemana, tempoNoDia, Min, Max }: MiniCardProps) => {
 
-
-
-
+    // COMPONENTE DO CARD PEQUENO DE PREVISAO DO TEMPO, COM DIA DA SEMANA, ICONE DO TEMPO, E TEMP MAX E MIN
     return (
         <div className="bg-bgSubCard w-full flex xl:flex-col place-self-center xl:items-start items-center 
                 xl:mx-[15px] py-[20px] px-[30px] rounded-[20px] text-white xl:gap-[7px] mx-auto gap-[30px]">

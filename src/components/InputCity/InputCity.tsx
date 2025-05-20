@@ -7,10 +7,13 @@ import contextWeather from "../ContextWeather/Context";
 
 const InputCity = () => {
 
+    // ESTADO PARA ARMAZENAR O VALOR SELECIONADO
     const [selecionado, setSelecionado] = useState('')
 
+    // CHAMADA DO CONTEXT
     const context = useContext(contextWeather)
 
+    // MUDANÇA PARA ARMAZENAR O VALOR SELECIONADO NO ESTADO
     useEffect(() => {
    
       context?.setNome(selecionado);
@@ -20,6 +23,8 @@ const InputCity = () => {
    if (!context) return null;
 
     return (
+
+        //ÁREA DO SELECT
         <div className="flex xl:mx-auto border-white border-[2px] rounded-[20px] xl:w-fit w-fit place-self-center">
                 <img src="/images/lupa.png" alt='icone de lupa' className="opacity-50 w-[40px] h-auto"/>
                 <select

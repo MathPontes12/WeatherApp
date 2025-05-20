@@ -8,10 +8,13 @@ import { useContext, useEffect, useState } from "react";
 
 export default function Home() {
 
+  //CHAMADA DO CONTEXT
   const contexto = useContext(contextWeather)
 
+  // ESTADO PARA A COR DE FUNDO
   const [corDeFundo, setCorDeFundo] = useState('')
 
+  // MUDANÇA DA TELA NA TROCA DE ESTADO
   useEffect(() => {
     
     if (!contexto?.weather) return;
@@ -48,6 +51,8 @@ export default function Home() {
 
 }, [contexto]);
 
+
+  // SE NAO HOUVER NADA NA CHAMADA DO CONTEXTO RETORNA NULL
   if (!contexto) return null
 
   return (

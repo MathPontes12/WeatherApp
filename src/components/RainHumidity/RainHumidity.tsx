@@ -2,8 +2,11 @@
 
 import { RainPercentProps } from "./RainPercentType"
 
+// O COMENTARIO ACIMA PERMITE O USO DO IMG AO INVES DO IMAGE DO NEXT, EVITANDO ALERTA
 
 const RainHumidity = ({ rainPercent, humidity }: RainPercentProps) => {
+
+    // COMPONENTE DE CHANCE DE CHUVA E UMIDADE ATUAIS
     return (
         <div className="flex xl:flex-col items-center text-white mb-[20px] gap-[10px] w-full justify-center">
             <div className="flex items-center gap-[5px]">

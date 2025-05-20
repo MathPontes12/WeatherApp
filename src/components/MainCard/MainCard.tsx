@@ -9,10 +9,13 @@ import Image from "next/image";
 
 const MainCard = () => {
 
+    // CHAMADA DO CONTEXT
     const context = useContext(contextWeather)
 
     if (!context) return null;
 
+
+    // COMPONENTE DO CARD PRINCIPAL QUE MOSTRA O TEMPO/CLIMA ATUAL, TEMP NO MOMENTO, MAX E MIN DO DIA, E CHANCE DE CHUVA E UMIDADE ATUAIS
     return (
 
         <div className="bg-bgCard xl:w-full w-fit flex flex-col place-self-center py-[20px] px-[30px] rounded-[20px]">
