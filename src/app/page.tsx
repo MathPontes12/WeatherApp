@@ -52,7 +52,7 @@ export default function Home() {
 
   return (
 
-    <div className={`z-50 flex flex-col gap-[20px] py-[30px] px-[400px] h-screen ${corDeFundo}`}>
+    <div className={`flex flex-col gap-[20px] xl:py-[30px] xl:px-[400px] xl:h-screen h-[100%] ${corDeFundo}`}>
 
       <InputCity />
       <MainCard />

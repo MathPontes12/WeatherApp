@@ -1,31 +1,32 @@
-import Image from "next/image";
+/* eslint-disable @next/next/no-img-element */
+
 import { MiniCardProps } from "./MiniCardType";
 
 
 const MiniCard = ({ diaDaSemana, tempoNoDia, Min, Max }: MiniCardProps) => {
 
 
-    
+
 
     return (
-        <div className="bg-bgSubCard w-full flex flex-col place-self-center 
-                mx-[15px] py-[20px] px-[30px] rounded-[20px] text-white gap-[7px]">
-            <h1 className="text-[20px]"> {diaDaSemana} </h1>
-            <Image
-                width={150}
-                height={150}
-                priority
-                loading="eager"
-                className="opacity-70"
+        <div className="bg-bgSubCard w-full flex xl:flex-col place-self-center xl:items-start items-center 
+                xl:mx-[15px] py-[20px] px-[30px] rounded-[20px] text-white xl:gap-[7px] mx-auto gap-[30px]">
+            <h1 className="xl:text-[20px] text-[22px]"> {diaDaSemana} </h1>
+            <img
+                className="opacity-70 xl:w-[80px] w-[70px] h-auto"
                 src={`/images/${tempoNoDia}-dia.svg`}
                 alt="Icone do tempo/clima"
             />
-             <div className="flex place-self-center">
-                <p className="text-[16px]  text-[#046DFF]">{Min}</p>
-                <p className="text-[10px] text-[#046DFF]">°C</p>
-                <p className="text-[18px] mx-[6px]">/</p>
-                <p className="text-[16px] text-[#B50000]" >{Max}</p>
-                <p className="text-[10px] text-[#B50000]">°C</p>
+            <div className="flex xl:flex-row flex-col place-self-center">
+                <div className="flex">
+                    <p className="xl:text-[16px] text-[22px] text-[#B50000]" >{Max}</p>
+                    <p className="xl:text-[10px] text-[#B50000]">°C</p>
+                    <p className="text-[18px] mx-[6px] xl:block hidden">/</p>
+                </div>
+                <div className="flex">
+                    <p className="xl:text-[16px] text-[22px] text-[#046DFF] ">{Min}</p>
+                    <p className="xl:text-[10px] text-[#046DFF]">°C</p>
+                </div>
             </div>
         </div>
     )

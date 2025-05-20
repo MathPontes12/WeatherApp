@@ -15,11 +15,11 @@ const MainCard = () => {
 
     return (
 
-        <div className="bg-bgCard w-full flex flex-col place-self-center py-[20px] px-[30px] rounded-[20px]">
+        <div className="bg-bgCard xl:w-full w-fit flex flex-col place-self-center py-[20px] px-[30px] rounded-[20px]">
 
             <h1 className="text-white text-[28px]">Hoje</h1>
 
-            <div className="flex items-center gap-[80px] px-[50px]">
+            <div className="flex xl:flex-row flex-col items-center xl:gap-[80px] px-[50px]">
                 
                 <Image
                     width={150}
@@ -31,10 +31,12 @@ const MainCard = () => {
                     alt="Icone do tempo/clima"
                 />
 
-                <div className="flex flex-col">
-                    <h1 className="text-white text-[36px] place-self-end mb-[60px] mt-[-40px]">{context?.weather?.city}</h1>
+                <div className="flex flex-col xl:gap-0 gap-[30px]">
+                    <h1 className="text-white xl:text-[36px] text-[30px] xl:place-self-end xl:mb-[60px] xl:mt-[-40px]">
+                        {context?.weather?.city}
+                    </h1>
 
-                    <div className="flex items-center justify-self-start gap-[40px]">
+                    <div className="flex xl:flex-row flex-col justify-self-start xl:gap-[80px] gap-[20px] w-full">
 
                         <Temperature
                             tempDescricao={context?.weather?.forecast[0]?.description}

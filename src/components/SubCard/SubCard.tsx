@@ -14,7 +14,7 @@ const SubCard = () => {
 
     return(
 
-        <div className="bg-bgCard w-full flex place-self-center py-[20px] px-[15px] rounded-[20px]">
+        <div className="bg-bgCard xl:w-full w-fit flex xl:flex-row flex-col place-self-center py-[20px] px-[15px] rounded-[20px] xl:gap-0 gap-[20px]">
 
             <MiniCard 
             diaDaSemana={context?.weather?.forecast[1]?.weekday} 

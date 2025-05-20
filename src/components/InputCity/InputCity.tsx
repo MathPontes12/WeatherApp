@@ -20,10 +20,10 @@ const InputCity = () => {
    if (!context) return null;
 
     return (
-        <div className="flex mx-auto border-white border-[2px] rounded-[20px] w-fit">
+        <div className="flex xl:mx-auto border-white border-[2px] rounded-[20px] xl:w-fit w-fit place-self-center">
                 <img src="/images/lupa.png" alt='icone de lupa' className="opacity-50 w-[40px] h-auto"/>
                 <select
-                    className="text-white text-[24px] rounded-[20px] py-[7px] pl-[40px] pr-[20px] ml-[-40px]"
+                    className="text-white xl:text-[24px] text-[20px] rounded-[20px] py-[7px] pl-[40px] pr-[20px] ml-[-40px]"
                     value={selecionado} onChange={(evento) => setSelecionado(evento.target.value)}
                 >
                     <option hidden className="text-[#2C95FF]">Selecione uma das cidades</option>

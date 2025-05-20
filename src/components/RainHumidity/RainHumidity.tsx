@@ -1,18 +1,19 @@
-import Image from "next/image"
+/* eslint-disable @next/next/no-img-element */
+
 import { RainPercentProps } from "./RainPercentType"
 
 
-const RainHumidity = ({ rainPercent, humidity }:RainPercentProps) => {
-    return(
-        <div className="flex items-center text-white mb-[20px] gap-[10px] w-full">
-            <div className="flex flex-col items-center gap-[5px]">
-                <Image width={120} height={120} priority src='/images/Chuva.png' alt="Icone do tempo/clima"  className="opacity-80"/>
-                <Image width={40} height={40} priority src='/images/Umidade.png' alt="Icone do tempo/clima"  className="opacity-80"/>
-                
+const RainHumidity = ({ rainPercent, humidity }: RainPercentProps) => {
+    return (
+        <div className="flex xl:flex-col items-center text-white mb-[20px] gap-[10px] w-full justify-center">
+            <div className="flex items-center gap-[5px]">
+                <img src='/images/Chuva.png' alt="Icone de precipitação" className="opacity-80 xl:w-[70px] h-auto" />
+                <p className="text-[20px]">{rainPercent}%</p>
+
             </div>
-            <div className="flex flex-col gap-[60px] mt-[30px] text-[20px]">
-                <p>{rainPercent}%</p>
-                <p>{humidity}%</p>
+            <div className="flex text-[20px] items-center xl:pl-[22px] xl:gap-[20px] gap-[5px]">
+                <img src='/images/Umidade.png' alt="Icone de umidade" className="opacity-80 xl:w-[40px] h-auto" />
+                <p className="text-[20px] ">{humidity}%</p>
             </div>
         </div>
     )
