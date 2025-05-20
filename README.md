@@ -31,4 +31,4 @@ Projeto React desenvolvido por mim, disponibilizando ao usuário o tempo e clima
 </div>
 
 ## Deploy on Vercel
-https://financas-dashboard.vercel.app/
+https://weather-app-omega-lime.vercel.app/
