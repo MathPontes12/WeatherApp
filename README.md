@@ -27,9 +27,8 @@ Projeto React desenvolvido por mim, disponibilizando ao usuário o tempo e clima
       <br>
       <br>
       <br>
-      <img src="" width= "800"/>
+      <img src="https://github.com/user-attachments/assets/92330dd1-65a0-4e53-b07f-bbdee70330f1" width= "800"/>
 </div>
-
 
 ## Deploy on Vercel
 https://financas-dashboard.vercel.app/
