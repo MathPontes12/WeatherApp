@@ -27,7 +27,7 @@ Projeto React desenvolvido por mim, disponibilizando ao usuário o tempo e clima
       <br>
       <br>
       <br>
-      <img src="https://github.com/user-attachments/assets/218e077e-f61d-492f-897c-52e3be75a4ff" width= "800"/>
+      <img src="" width= "800"/>
 </div>
 
 
